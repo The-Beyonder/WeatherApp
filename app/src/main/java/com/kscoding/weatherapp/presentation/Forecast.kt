@@ -24,13 +24,13 @@ state.weatherInfo?.weatherDataPerDay?.get(0)?.let { data ->
         Text(text = "Today's Hourly Forecast",
         fontSize = 22.sp,
         color= Color.White)
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(24.dp))
         LazyRow(content = {
             items(data){ weatherData ->
                 HourlyCard(
                     weatherData= weatherData,
                     modifier = Modifier
-                        .height(100.dp)
+                        .height(110.dp)
                         .padding(horizontal = 20.dp)
                 )
             }

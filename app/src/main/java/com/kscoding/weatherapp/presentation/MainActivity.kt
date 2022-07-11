@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.kscoding.weatherapp.presentation.ui.theme.DarkBlue
 import com.kscoding.weatherapp.presentation.ui.theme.DeepBlue
 import com.kscoding.weatherapp.presentation.ui.theme.WeatherAppTheme
@@ -65,6 +66,7 @@ class MainActivity : ComponentActivity() {
                         Text(
                             text = error,
                             color = Color.Red,
+                            fontSize = 20.sp,
                             textAlign = TextAlign.Center,
                             modifier = Modifier.align(Alignment.Center)
                         )

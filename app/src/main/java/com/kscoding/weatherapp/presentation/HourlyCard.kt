@@ -14,6 +14,7 @@ import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.kscoding.weatherapp.domain.weather.WeatherData
@@ -39,7 +40,7 @@ fun HourlyCard(
             text = formattedTime,
             color = Color.LightGray,
             style = TextStyle(
-                fontSize = 20.sp,
+                fontSize = 14.sp,
                 fontWeight = FontWeight.Bold
             )
         )
@@ -51,7 +52,7 @@ fun HourlyCard(
             text = "${weatherData.temperatureCelsius}°C",
             color = textColor,
             style = TextStyle(
-                fontSize = 20.sp,
+                fontSize = 16.sp,
                 fontWeight = FontWeight.Bold
             )
         )
